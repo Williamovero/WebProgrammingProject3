@@ -1,47 +1,178 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <!--
 author William Orgertrice, Ayanna Shaheed and Julian Sosa
 -->
+<jsp:useBean id="beans" class="CSC4370.Controllers.userbeans" scope="session" />
+<jsp:setProperty name="beans" property="*" />
 <html>
     <head>
         <title>Web Programming Project 3</title>
         <meta charset="UTF-8">
+       
+
+
         <!-- Responsive Layout -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+
+
+
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="Project3.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+       
+
+
+
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
     </head>
+
+
+
+
     <!-- Beginning of body -->
-    <body>
+    <body id="home">
         <!--Beginning of Header -->
         <div class="Header">
             <header>
-                <section class="Top">
-                    <h1>
-                        Hello World!
-                    </h1>
-                </section>
+               	<div class="navbar-fixed">
+                <nav class="containerLinks"> 
+    <div class="nav-wrapper">
+      <a href="#home" id="logo" class="brand-logo">WEB CLOTHES</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="#home" class="nav-button current">Home</a></li>
+<li><a href="#clothing" class="nav-button">Clothing</a></li>
+<li><a href="#about" class="nav-button">About</a></li>
+<li><a href="#footer" class="nav-button">Contact</a></li>
+       <li><a href="../src/java/CSC4370/shop.jsp" id="shoppingCart">Shopping Cart <i class="fa fa-shopping-cart" style="font-size:24px"></i> </a></li>
+        <li><a href="login.jsp">Login</a></li>
+         <li><a href="register.jsp">Sign up</a></li>
+      </ul>
+    </div>
+			</nav>	
+	</div>
             </header>
-        </div>
         <!--End of Header -->
+
+
+
+
+
+
+
+
         <!--Beginning of Main Content-->
         <div class="MainContent">
-            <div class="Middle">
-                <p></p>
+
+                  <!-- Fixed Image -->
+             <div class="firstImage">
+<h2>
+  Welcome to Web Clothes!
+</h2>
+<p style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>  
+
+            <table border="1" class="tables">
+                <tr>
+                    <td>
+                      <h3>Shoes</h3>
+                     <a href=""> <img class="smallImage" src="Images/classic-close-up-clothes-298864.jpg" alt="Clothes" style="height: 200px; margin-left: 100px;"> </a>
+                        <p id="clothing" class="paratext">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </td>
+                    <td>
+                      <h3>Dress Shirts</h3>
+                    <a href=""> <img class="smallImage" src="Images/blur-box-business-297933.jpg" alt="Clothes" style="height: 200px; margin-left: 100px;"> </a>
+                        <p class="paratext">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </td>
+                    <td id="lightdata">
+                      <h3>Other Clothes</h3>
+                      <a href=""> <img class="smallImage" src="Images/black-and-white-black-and-white-clothes-581339.jpg" alt="Clothes" style="height: 200px; margin-left: 25px;"> </a>
+                        <p class="paratext">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <div id="about" class="Middle secondImage">
+              <h1>
+                We have been in the business for YEARS!
+              </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. </p>
             </div>
+            <div class="wrapUp">
+            <h2>About Us</h2>
+            <p class="paratext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
         <!--End of Main Content-->
+
+
+
+
         <!-- Beginning of footer -->
-        <div class="Footer">
-            <div class="Bottom">
-                
-            </div>
+        <div class="Footer" id="footer">
+          <h2>
+            Contact Us at These Links
+          </h2>
+            <table>
+                <tr>
+                <ul style="list-style-type: none; display: inline-block;" class="leftAlign">
+                  <li><a href="">About</a></li>
+                  <ul>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Employment</a></li>
+                </ul>
+                </ul>
+                <ul style="list-style-type: none; display: inline-block;" class="leftAlign">
+                  <li><a href="">Connections</a></li>
+                  <ul>
+                  <li><a href="">Magazines</a></li>
+                  <li><a href="">Tickets</a></li>
+                </ul>
+                </ul>
+            </tr>
+                  <tr>
+                <ul>
+			<li style="list-style-type: none; display: inline-block;"><span class="Link-height"><a href="https://www.linkedin.com/in/williamorgertrice/"><i class="fa fa-linkedin"></i></a></span></li>
+			<li style="list-style-type: none; display: inline-block; margin-left:10px; "><span class="Link-height"><a href="https://github.com/Williamovero/WebProgrammingProject3"><i class="fa fa-github"></i></a></span></li>
+		</ul>
+            </tr>
+            </table>
         </div>
         <!-- End of footer -->
+
     </body>
     
 </html>

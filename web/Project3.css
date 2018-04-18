@@ -1,4 +1,3 @@
-
 /* 
     Created on : Apr 8, 2018, 3:51:47 AM
     Author     : William Orgertrice, Ayanna Shaheed and Julian Sosa
@@ -6,13 +5,25 @@
 
 /*attributes*/
 body{
-        background-color: #666699;
+        background-color: #0a0a0f;
 	font-family: arial;
 	margin: 0;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.8em;
-	color: #ecd9c6;
+	color: whitesmoke;
+}
+button:hover{
+    opacity: 0.8;
+}
+h1, h2, h3, h4{
+    text-shadow: 2px 2px #9fa9a3;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-shadow: 0.5px 0.5px #9fa9a3;
 }
 /*classes*/
 .Footer{
@@ -20,26 +31,97 @@ body{
 	display: inline-block;
 	text-align: center;
 	width: 100%;
-        background-color: #660066;
+        background-color: #e3e0cc;
 }
 .Header{
 	width: 100%;
 	display: inline-block;
 	color: white;
-        background-color: #0F57E8;
 }
 .MainContent{
 	margin-top: 60px;
-	display: inline-block;
 	text-align: center;
-        background-color: #2E38BA;
 }
 .Top{
         font-family: 'Open Sans', sans-serif; 
 }
 .Middle{
         font-family: 'Droid Sans',sans-serif;
+        background-image: url('Images/boutique-clothes-clothing-264554.jpg');
+      min-height:400px;
 }
 .Bottom{
         font-family: 'PT Sans',sans-serif;
+}
+.noDots{
+    list-style-type: none; 
+}
+.Block{
+  display: inline-block;  
+}
+.paratext{
+    color: #b37700;
+    text-align: center;
+}
+.paratextlight{
+    color: #f6f5ef;
+    text-align: center;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px; 
+}
+.firstImage{
+  background-image: url('Images/pexels-photo-102129.jpeg');
+  min-height:600px;
+}
+.tables{
+    border-collapse: collapse;
+    background-color: #ffeecc;
+}
+.container{
+    padding: 16px;
+}
+.containerLinks{
+    color: #fff7e6;
+    margin-right: 20px;
+    background-color: #c5d5c5;
+}
+.Link-height{
+    color: white;
+    font-size: 50px;
+}
+  .firstImage, .secondImage, .thirdImage{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin: 0;
+  background-attachment:fixed;
+}
+@media(max-width:568px){
+  .firstImage, .secondImage, .thirdImage{
+    background-attachment:scroll;
+  }
+}
+.smallImage{
+    margin-left: 
+    width: 400px;
+    margin-bottom: 10px;
+}
+.wrapUp{
+    background-color: #9fa9a3;
+    min-height: 500px;
+}
+.leftAlign{
+  text-align: left;
+  margin-right: 15px;
+}
+/*ID's*/
+#logo{
+    margin-left:50px;
+}
+#shoppingCart{
+    margin-bottom: 10px;
+
 }
